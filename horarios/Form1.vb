@@ -37,16 +37,13 @@ Public Class Form1
         Try
 
 
+
         Catch ex As Exception
 
             MsgBox("No puede generar este proceso")
 
         End Try
 
-
-    End Sub
-
-    Private Sub dateCheckin_ValueChanged(sender As Object, e As EventArgs) Handles dateCheckin.ValueChanged
 
     End Sub
 
