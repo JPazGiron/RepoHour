@@ -3,7 +3,22 @@
 Public Class Form1
     Private Sub cbxEmpleado_SelectedIndexChanged(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        cargaDB("select * from Empleado", DataGridView1)
+        'Dim cn As New SqlConnection("Data Source=DESKTOP-A3F4BPM;Initial Catalog=hour;Integrated Security=True")
+
+        ''''Consulta para mostrar en el combobox
+
+        'Dim sql As New SqlCommand("select nombreEmp from Empleado", cn)
+
+        'Dim adapter As New SqlDataAdapter(sql)
+
+        'Dim table As New DataTable()
+
+        ''''DataAdapter.Fill
+        'adapter.Fill(table)
+
+        cargaDB("select nombreEmp from Empleado",  )
+
+        cbxEmpleado.DataSource = table
 
         cbxEmpleado.DisplayMember = "idEmp"
         cbxEmpleado.ValueMember = "nombreEmp"
